@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Canggih</title>
+    <link rel="stylesheet" href="styles/Calculator.css">
+    <script defer src="scripts/Calculator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='index.html'">
+        <i class="fas fa-arrow-left"></i> Kembali
+    </button>
+    <div class="calculator">
+        <div class="screen">
+            <input type="text" id="display" disabled>
+        </div>
+        <div class="buttons">
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button onclick="appendCharacter('(')">(</button>
+            <button onclick="appendCharacter(')')">)</button>
+            <button onclick="appendCharacter('/')">÷</button>
+
+            <button onclick="appendCharacter('7')">7</button>
+            <button onclick="appendCharacter('8')">8</button>
+            <button onclick="appendCharacter('9')">9</button>
+            <button onclick="appendCharacter('*')">×</button>
+
+            <button onclick="appendCharacter('4')">4</button>
+            <button onclick="appendCharacter('5')">5</button>
+            <button onclick="appendCharacter('6')">6</button>
+            <button onclick="appendCharacter('-')">−</button>
+
+            <button onclick="appendCharacter('1')">1</button>
+            <button onclick="appendCharacter('2')">2</button>
+            <button onclick="appendCharacter('3')">3</button>
+            <button onclick="appendCharacter('+')">+</button>
+
+            <button onclick="appendCharacter('0')">0</button>
+            <button onclick="appendCharacter('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="appendCharacter('%')">%</button>
+
+            <button onclick="calculateSin()">sin</button>
+            <button onclick="calculateCos()">cos</button>
+            <button onclick="calculateTan()">tan</button>
+            <button onclick="calculateLog()">log</button>
+
+            <button onclick="calculateExp()">e^x</button>
+            <button onclick="calculateFactorial()">x!</button>
+            <button onclick="resetHistory()">Reset</button>
+        </div>
+    </div>
+    <div class="history">
+        <h2>by Jeremy Darrell A</h2>
+        <h2>Riwayat Perhitungan</h2>
+        <ul id="history-list"></ul>
+    </div>
+</body>
+</html>

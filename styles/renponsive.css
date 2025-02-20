@@ -1,0 +1,165 @@
+@media screen and (max-width: 1000px) {
+    p {
+        font-size: .9rem;
+        line-height:1.8rem;
+    }
+
+    .grid-3 {
+        gap: 1rem;
+    }
+
+    .skills-right ul li {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 825px) {
+    /* Burger */
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .toggle-burger .line-1 {
+        transform: rotate(-45deg) translate(-5px, 7px);
+    }
+
+    .toggle-burger .line-2 {
+        opacity: 0;
+    }
+
+    .toggle-burger .line-3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+    /* Navigation */
+    nav {
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background: #fff;
+        border-left: 1px solid #f2f2f2;
+        z-index: 9;
+        transform: translateX(100%);
+        transition: 0.3s ease-in-out;
+        scroll-behavior: smooth;
+    }
+
+    nav ul {
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    :root {
+        --sectionPadding: 4rem 0
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        margin: 0.6rem 0 2.5rem;
+    }
+
+    .pre-title {
+        font-size: 0.8rem;
+    }
+
+    /* Hero Section */
+    #hero {
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+
+    .hero-right {
+        order: -1;
+    }
+
+    .hero-right img {
+        width: 70%;
+    }
+
+    .hero-left {
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+
+    .hero-left .pre-title {
+        margin: auto;
+    }
+
+    .hero-name {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+
+    }
+
+    /* Skills Section */
+    .skills-grid {
+        gap: 1rem;
+    }
+
+    /* Footer Section */
+    footer {
+        padding:2rem 0 ;
+    }
+}
+/* Add this to your styles/responsive.css file */
+
+@media screen and (max-width: 768px) {
+    /* Mobile dropdown styles */
+    .dropdown-content {
+        position: static;
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        box-shadow: none;
+        transform: none;
+        transition: all 0.3s ease;
+        background-color: var(--secondaryBackgroundColor);
+        border-radius: 0;
+    }
+    
+    .dropdown.touch-active .dropdown-content {
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .dropdown-content a {
+        padding: 12px 20px;
+    }
+    
+    .dropdown-trigger {
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .dropdown-icon {
+        transition: transform 0.3s ease;
+    }
+    
+    .dropdown.touch-active .dropdown-icon {
+        transform: rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    /* Title */
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .pre-title {
+        font:0.7rem ;
+    }
+}
