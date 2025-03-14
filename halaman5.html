@@ -6,7 +6,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kampung Adat Dukuh Dalam</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="styles/halaman5.css">
+    <style>
+        /* Soft Brown Gradient Color Palette */
+
+
+:root {
+    --bg-primary: linear-gradient(135deg, #964B00, #788F3C);
+    --bg-secondary: linear-gradient(135deg, #765b30,   #5cb8ff);
+    --text-primary: #452B1F;
+    --text-secondary: #2F4F4F;
+    --hover-color: #8B9467;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background-image: url(imagesH5/FotoHutan.jpg);
+    background-size: cover;
+    /* atau contain untuk memastikan gambar tetap proporsional */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* untuk membuat gambar tetap di tempat saat scrolling */
+
+}
+ 
+p {
+    font-weight: bolder;
+}
+
+/* Navbar Styling */
+
+.navbar {
+    background: var(--bg-secondary);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff9500;
+}
+
+/* Main Content Styling */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.content-section {
+    background: rgba(255, 255, 255, 0.821);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+
+.footer {
+    background: var(--bg-secondary);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.h2-link {
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #FFD700;
+}
+
+
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-links a .material-icons {
+    margin-right: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar-brand .material-icons {
+    font-size: 1.8rem;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.foto-judul {
+    height: 22rem;
+    width: 22rem;
+    border-radius: 10px;
+
+}
+
+.paragraf-1 {
+    width: 40rem;
+    text-align: justify;
+}
+    </style>
 
 </head>
 
